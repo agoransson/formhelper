@@ -1,5 +1,5 @@
 /**
- * formhelper
+ * bsformhelper
  *
  * Copyright (c) Andreas Göransson (https://github.com/agoransson)
  *
@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-export { default } from './FormHelper';
+export { renderForm } from './FormHelper';
 
 export { obj, randomId } from './Helpers';
 

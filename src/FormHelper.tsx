@@ -80,7 +80,7 @@ const renderControl = (control: Control) => (
  * @param {object} control 
  * @returns <Form.Group />
  */
-const renderGroup = (control: Control) => {
+export const renderGroup = (control: Control) => {
     if (isDivider(control)) {
         return renderDivider();
     }
@@ -101,7 +101,7 @@ const renderGroup = (control: Control) => {
  * @param {array} controls 
  * @returns <Form.Row />
  */
-const renderRow = (controls: Array<Control>) => (
+export const renderRow = (controls: Array<Control>) => (
     <div key={controls.map(control => control.name).join('.')}>
         {controls.map((control) => (
             renderGroup(control)
@@ -114,10 +114,8 @@ const renderRow = (controls: Array<Control>) => (
  * 
  * @param {array} form      The form, should be defined as an array.
  */
-const renderForm = (controls: Array<(Control | Array<Control>)>) => (
+ export const renderForm = (controls: Array<(Control | Array<Control>)>) => (
     controls.map(control => (
         Array.isArray(control) ? renderRow(control) : renderRow([control])
     ))
 )
-
-export default renderForm;
