@@ -34,4 +34,3 @@ export const isSubmit = (arg: Control): arg is SubmitControl => arg.type.toLower
 export const renderSubmit = (control: SubmitControl) => (
     <input key={control.name} type="submit" value={control.title} {...control} />
 )
-

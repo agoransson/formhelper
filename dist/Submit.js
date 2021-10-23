@@ -32,4 +32,5 @@ exports.isSubmit = isSubmit;
  */
 const renderSubmit = (control) => (react_1.default.createElement("input", Object.assign({ key: control.name, type: "submit", value: control.title }, control)));
 exports.renderSubmit = renderSubmit;
+//<input key={control.name} type="submit" value={control.title} {...control} />
 //# sourceMappingURL=Submit.js.map
