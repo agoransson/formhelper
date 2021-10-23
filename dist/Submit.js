@@ -30,6 +30,6 @@ exports.isSubmit = isSubmit;
  * @param {SubmitControl} control
  * @returns
  */
-const renderSubmit = (control) => (react_1.default.createElement("input", Object.assign({ key: control.name, type: "submit" }, control)));
+const renderSubmit = (control) => (react_1.default.createElement("input", { key: control.name, type: "submit" }, control.title));
 exports.renderSubmit = renderSubmit;
 //# sourceMappingURL=Submit.js.map
