@@ -32,10 +32,8 @@ export const isLabel = (arg: Control): arg is LabelControl => arg.type.toLowerCa
  * @returns <Form.Label />
  */
 export const renderLabel = (label: (LabelControl | String)) => (
-    // (control.type === 'file' || control.type === 'check') ? <React.Fragment /> : 
-    // (label instanceof LabelControl) ? renderControl(label) :
-    // obj(label) ? renderControl({type: 'label', ...label}) :
-    // typeof label === 'string' ? renderControl({type: 'label', title: label}) :
-    <React.Fragment />
+    <>
+    {/* Need to inject label somehow... */}
+    </>
 )
 

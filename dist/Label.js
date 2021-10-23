@@ -30,11 +30,6 @@ exports.isLabel = isLabel;
  * @param {LabelControl} control
  * @returns <Form.Label />
  */
-const renderLabel = (label) => (
-// (control.type === 'file' || control.type === 'check') ? <React.Fragment /> : 
-// (label instanceof LabelControl) ? renderControl(label) :
-// obj(label) ? renderControl({type: 'label', ...label}) :
-// typeof label === 'string' ? renderControl({type: 'label', title: label}) :
-react_1.default.createElement(react_1.default.Fragment, null));
+const renderLabel = (label) => (react_1.default.createElement(react_1.default.Fragment, null));
 exports.renderLabel = renderLabel;
 //# sourceMappingURL=Label.js.map

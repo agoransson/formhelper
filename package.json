@@ -1,6 +1,6 @@
 {
   "name": "@agoransson/formhelper",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Simple helper for generating react forms from javascript objects.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,7 +15,8 @@
     "react-bootstrap"
   ],
   "dependencies": {
-    "react": "^17.0.2"
+    "react": "^17.0.2",
+    "sass": "^1.43.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.5",

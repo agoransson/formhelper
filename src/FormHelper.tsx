@@ -17,6 +17,7 @@
  */
 
 import React from 'react';
+
 import {
     Control,
     LabelControl,
@@ -114,7 +115,7 @@ export const renderRow = (controls: Array<Control>) => (
  * 
  * @param {array} form      The form, should be defined as an array.
  */
- export const renderForm = (controls: Array<(Control | Array<Control>)>) => (
+export const renderForm = (controls: Array<(Control | Array<Control>)>) => (
     controls.map(control => (
         Array.isArray(control) ? renderRow(control) : renderRow([control])
     ))
