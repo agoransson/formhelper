@@ -16,6 +16,7 @@
  * limitations under the License.
  */
 
+export { renderControl } from './Control';
 export { renderLabel } from './Label';
 export { renderText } from './Text';
 export { renderPassword } from './Password';

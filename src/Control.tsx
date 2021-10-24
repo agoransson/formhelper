@@ -16,7 +16,9 @@
  * limitations under the License.
  */
 
+import React from 'react';
 import { LabelControl } from ".";
+import { useInput } from './UseInput';
 
 export type Control = {
     type: string;
@@ -28,3 +30,15 @@ export type Control = {
 
 export const isControl = (arg: Object): arg is Control => 
     arg.hasOwnProperty('type');
+
+/**
+ * Renders the actual control
+ *
+ * @param {Control} control
+ * @returns
+ */
+export const renderControl = (control: Control) => {
+    return (
+        <input key={control.name} {...control} />
+    );
+}

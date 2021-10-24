@@ -17,7 +17,9 @@
  * limitations under the License.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.renderSubmit = exports.renderButton = exports.renderDivider = exports.renderRadio = exports.renderCheckbox = exports.renderRange = exports.renderFile = exports.renderTextarea = exports.renderSelect = exports.renderEmail = exports.renderPassword = exports.renderText = exports.renderLabel = void 0;
+exports.renderSubmit = exports.renderButton = exports.renderDivider = exports.renderRadio = exports.renderCheckbox = exports.renderRange = exports.renderFile = exports.renderTextarea = exports.renderSelect = exports.renderEmail = exports.renderPassword = exports.renderText = exports.renderLabel = exports.renderControl = void 0;
+var Control_1 = require("./Control");
+Object.defineProperty(exports, "renderControl", { enumerable: true, get: function () { return Control_1.renderControl; } });
 var Label_1 = require("./Label");
 Object.defineProperty(exports, "renderLabel", { enumerable: true, get: function () { return Label_1.renderLabel; } });
 var Text_1 = require("./Text");

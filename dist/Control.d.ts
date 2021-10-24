@@ -15,6 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/// <reference types="react" />
 import { LabelControl } from ".";
 export declare type Control = {
     type: string;
@@ -24,3 +25,10 @@ export declare type Control = {
     disabled?: boolean;
 };
 export declare const isControl: (arg: Object) => arg is Control;
+/**
+ * Renders the actual control
+ *
+ * @param {Control} control
+ * @returns
+ */
+export declare const renderControl: (control: Control) => JSX.Element;

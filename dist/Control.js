@@ -16,8 +16,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isControl = void 0;
+exports.renderControl = exports.isControl = void 0;
+const react_1 = __importDefault(require("react"));
 const isControl = (arg) => arg.hasOwnProperty('type');
 exports.isControl = isControl;
+/**
+ * Renders the actual control
+ *
+ * @param {Control} control
+ * @returns
+ */
+const renderControl = (control) => {
+    return (react_1.default.createElement("input", Object.assign({ key: control.name }, control)));
+};
+exports.renderControl = renderControl;
 //# sourceMappingURL=Control.js.map
