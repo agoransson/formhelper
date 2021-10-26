@@ -63,13 +63,13 @@ exports.renderGroup = renderGroup;
  * @param {array} controls
  * @returns <Form.Row />
  */
-const renderRow = (controls) => (react_1.default.createElement("div", { key: controls.map(control => control.name).join('.') }, controls.map((control) => (exports.renderGroup(control)))));
+const renderRow = (controls) => (react_1.default.createElement("div", { key: controls.map(control => control.name).join('.'), className: "form-row" }, controls.map((control) => (exports.renderGroup(control)))));
 exports.renderRow = renderRow;
 /**
  * Renders a complete form.
  *
  * @param {array} form      The form, should be defined as an array.
  */
-const renderForm = (controls) => (controls.map(control => (Array.isArray(control) ? exports.renderRow(control) : exports.renderRow([control]))));
+const renderForm = (controls) => (react_1.default.createElement("div", { className: "form-container" }, controls.map(control => (Array.isArray(control) ? exports.renderRow(control) : exports.renderRow([control])))));
 exports.renderForm = renderForm;
 //# sourceMappingURL=FormHelper.js.map

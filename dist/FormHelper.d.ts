@@ -36,4 +36,4 @@ export declare const renderRow: (controls: Array<Control>) => JSX.Element;
  *
  * @param {array} form      The form, should be defined as an array.
  */
-export declare const renderForm: (controls: Array<(Control | Array<Control>)>) => JSX.Element[];
+export declare const renderForm: (controls: Array<(Control | Array<Control>)>) => JSX.Element;

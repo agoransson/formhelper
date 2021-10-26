@@ -103,7 +103,7 @@ export const renderGroup = (control: Control) => {
  * @returns <Form.Row />
  */
 export const renderRow = (controls: Array<Control>) => (
-    <div key={controls.map(control => control.name).join('.')}>
+    <div key={controls.map(control => control.name).join('.')} className="form-row">
         {controls.map((control) => (
             renderGroup(control)
         ))}
@@ -116,7 +116,9 @@ export const renderRow = (controls: Array<Control>) => (
  * @param {array} form      The form, should be defined as an array.
  */
 export const renderForm = (controls: Array<(Control | Array<Control>)>) => (
-    controls.map(control => (
-        Array.isArray(control) ? renderRow(control) : renderRow([control])
-    ))
+    <div className="form-container">
+       {controls.map(control => (
+            Array.isArray(control) ? renderRow(control) : renderRow([control])
+        ))}
+    </div>
 )
