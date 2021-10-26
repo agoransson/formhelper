@@ -89,7 +89,7 @@ export const renderGroup = (control: Control) => {
     const { name } = control;
 
     return (
-        <div key={`${name}-group`}>
+        <div key={`${name}-group`} className="form-col">
             {/* {label && renderLabel(label, control)} */}
             {renderControl(control)}
         </div>

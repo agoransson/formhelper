@@ -54,7 +54,7 @@ const renderGroup = (control) => {
         return _1.renderDivider();
     }
     const { name } = control;
-    return (react_1.default.createElement("div", { key: `${name}-group` }, renderControl(control)));
+    return (react_1.default.createElement("div", { key: `${name}-group`, className: "form-col" }, renderControl(control)));
 };
 exports.renderGroup = renderGroup;
 /**
