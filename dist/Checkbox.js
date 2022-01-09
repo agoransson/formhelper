@@ -34,7 +34,7 @@ const renderCheckbox = (control) => {
     const { name, label } = control;
     return (react_1.default.createElement("div", { key: `${name}-checkbox` },
         react_1.default.createElement("input", Object.assign({ type: 'checkbox', id: `${name}-checkbox` }, control)),
-        react_1.default.createElement("label", null, label)));
+        react_1.default.createElement("label", { htmlFor: `${name}-checkbox` }, label)));
 };
 exports.renderCheckbox = renderCheckbox;
 //# sourceMappingURL=Checkbox.js.map

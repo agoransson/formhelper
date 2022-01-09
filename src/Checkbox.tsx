@@ -41,7 +41,7 @@ export const renderCheckbox = (control: CheckboxControl) => {
                 type='checkbox'
                 id={`${name}-checkbox`}
                 {...control} />
-            <label>{label}</label>
+            <label htmlFor={`${name}-checkbox`}>{label}</label>
         </div>
     );
 }
