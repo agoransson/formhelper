@@ -31,8 +31,10 @@ exports.isCheckbox = isCheckbox;
  * @returns
  */
 const renderCheckbox = (control) => {
-    const { name, labels } = control;
-    return (react_1.default.createElement("div", { key: `${name}-checkbox` }, labels.map((label, index) => (react_1.default.createElement("input", { key: `${name}-checkbox-${index}`, type: 'checkbox', id: label, name: "isGoing" })))));
+    const { name, label } = control;
+    return (react_1.default.createElement("div", { key: `${name}-checkbox` },
+        react_1.default.createElement("input", Object.assign({ type: 'checkbox', id: `${name}-checkbox` }, control)),
+        react_1.default.createElement("label", null, label)));
 };
 exports.renderCheckbox = renderCheckbox;
 //# sourceMappingURL=Checkbox.js.map

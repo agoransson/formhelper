@@ -18,7 +18,7 @@
 /// <reference types="react" />
 import { Control } from './index';
 export declare type CheckboxControl = Control & {
-    labels: Array<string>;
+    label: string;
 };
 export declare const isCheckbox: (arg: Control) => arg is CheckboxControl;
 /**

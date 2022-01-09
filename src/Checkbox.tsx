@@ -20,7 +20,7 @@ import React from 'react';
 import { Control } from './index';
 
 export type CheckboxControl = Control & {
-    labels: Array<string>;
+    label: string;
 }
 
 export const isCheckbox = (arg: Control): arg is CheckboxControl => 
@@ -33,17 +33,15 @@ export const isCheckbox = (arg: Control): arg is CheckboxControl =>
  * @returns 
  */
 export const renderCheckbox = (control: CheckboxControl) => {
-    const { name, labels } = control;
+    const { name, label } = control;
 
     return (
         <div key={`${name}-checkbox`}>
-            {labels.map((label, index) => (
-                <input
-                    key={`${name}-checkbox-${index}`}
-                    type='checkbox'
-                    id={label}
-                    name="isGoing" />
-            ))}
+            <input
+                type='checkbox'
+                id={`${name}-checkbox`}
+                {...control} />
+            <label>{label}</label>
         </div>
     );
 }
