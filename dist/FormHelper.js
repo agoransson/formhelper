@@ -42,7 +42,7 @@ const renderControl = (control) => ((0, _1.isLabel)(control) ? (0, _1.renderLabe
                                         (0, _1.isDivider)(control) ? (0, _1.renderDivider)() :
                                             (0, _1.isButton)(control) ? (0, _1.renderButton)(control) :
                                                 (0, _1.isSubmit)(control) ? (0, _1.renderSubmit)(control) :
-                                                    (0, _1.isLink)(control) ? (0, _1.renderSubmit)(control) :
+                                                    (0, _1.isLink)(control) ? (0, _1.renderLink)(control) :
                                                         react_1.default.createElement(react_1.default.Fragment, null));
 /**
  * Renders a form group containing an optional label and a control.

@@ -18,7 +18,6 @@
 
 import React from 'react';
 import { LabelControl } from ".";
-import { useInput } from './UseInput';
 
 export type Control = {
     type: string;

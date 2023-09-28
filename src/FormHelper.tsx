@@ -74,7 +74,7 @@ const renderControl = (control: Control) => (
     isDivider(control) ? renderDivider() :
     isButton(control) ? renderButton(control) :
     isSubmit(control) ? renderSubmit(control) :
-    isLink(control) ? renderSubmit(control) :
+    isLink(control) ? renderLink(control) :
     <React.Fragment />
 )
 
