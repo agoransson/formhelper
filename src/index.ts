@@ -35,6 +35,7 @@ export {
     DividerControl, isDivider,
     ButtonControl, isButton,
     SubmitControl, isSubmit,
+    LinkControl, isLink
 } from './Types';
 
 export {
@@ -51,4 +52,5 @@ export {
     renderDivider,
     renderButton,
     renderSubmit,
+    renderLink,
 } from './Renderers';

@@ -16,18 +16,23 @@
  * limitations under the License.
  */
 
-export { renderControl } from './Control';
-export { renderLabel } from './Label';
-export { renderText } from './Text';
-export { renderPassword } from './Password';
-export { renderEmail } from './Email';
-export { renderSelect } from './Select';
-export { renderTextarea } from './Textarea';
-export { renderFile } from './File';
-export { renderRange } from './Range';
-export { renderCheckbox } from './Checkbox';
-export { renderRadio } from './Radio';
-export { renderDivider } from './Divider';
-export { renderButton } from './Button';
-export { renderSubmit } from './Submit';
-export { renderLink } from './Link';
+import React from 'react';
+import { Control } from '.';
+
+export type LinkControl = Control & {
+    title: string
+    href: string
+    onClick?: () => void
+}
+
+export const isLink = (arg: Control): arg is LinkControl => arg.type.toLowerCase() === 'link';
+
+/**
+ * Renders a link.
+ * 
+ * @param {LinkControl} control 
+ * @returns 
+ */
+export const renderLink = (control: LinkControl) => (
+    <a href={control.href} onClick={control.onClick}>{control.title}</a>
+)

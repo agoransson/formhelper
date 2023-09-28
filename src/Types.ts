@@ -30,3 +30,4 @@ export { RadioControl, isRadio } from './Radio';
 export { DividerControl, isDivider } from './Divider';
 export { ButtonControl, isButton } from './Button';
 export { SubmitControl, isSubmit } from './Submit';
+export { LinkControl, isLink } from './Link';
