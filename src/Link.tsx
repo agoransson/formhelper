@@ -34,5 +34,5 @@ export const isLink = (arg: Control): arg is LinkControl => arg.type.toLowerCase
  * @returns 
  */
 export const renderLink = (control: LinkControl) => (
-    <a href={control.href} onClick={control.onClick}>{control.title}</a>
+    <a href={control.href} onClick={control.onClick} {...control}>{control.title}</a>
 )

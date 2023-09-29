@@ -30,6 +30,6 @@ exports.isLink = isLink;
  * @param {LinkControl} control
  * @returns
  */
-const renderLink = (control) => (react_1.default.createElement("a", { href: control.href, onClick: control.onClick }, control.title));
+const renderLink = (control) => (react_1.default.createElement("a", Object.assign({ href: control.href, onClick: control.onClick }, control), control.title));
 exports.renderLink = renderLink;
 //# sourceMappingURL=Link.js.map

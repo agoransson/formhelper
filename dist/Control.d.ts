@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/// <reference types="react" />
+import { CSSProperties } from 'react';
 import { LabelControl } from ".";
 export type Control = {
     type: string;
@@ -23,6 +23,7 @@ export type Control = {
     name?: string;
     options?: Array<string>;
     disabled?: boolean;
+    style?: CSSProperties;
 };
 export declare const isControl: (arg: Object) => arg is Control;
 /**

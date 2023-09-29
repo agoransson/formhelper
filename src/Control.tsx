@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-import React from 'react';
+import React, { CSSProperties } from 'react';
 import { LabelControl } from ".";
 
 export type Control = {
@@ -25,6 +25,7 @@ export type Control = {
     name?: string;
     options?: Array<string>;
     disabled?: boolean;
+    style?: CSSProperties;
 }
 
 export const isControl = (arg: Object): arg is Control => 
